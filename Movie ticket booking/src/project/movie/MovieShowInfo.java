@@ -19,7 +19,6 @@ public class MovieShowInfo {
 	}
 	public MovieShowInfo() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public MovieShowInfo(String showTime, int numberOfSeats) {
 		super();

@@ -2,7 +2,6 @@ package project.service;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
 import project.movie.MovieShow;
 import project.movie.MovieShowInfo;
 
@@ -19,11 +18,14 @@ public class MovieShowService {
 	ms4.setShowDate("10-Dec");
 	MovieShow ms5 = new MovieShow();
 	ms5.setShowDate("11-Dec");
+	MovieShow ms6 = new MovieShow();
+	ms6.setShowDate("12-Dec");
 	movieShow.add(ms1);
 	movieShow.add(ms2);
 	movieShow.add(ms3);
 	movieShow.add(ms4);
 	movieShow.add(ms5);
+	movieShow.add(ms6);
 	}
 	
 	public void showMoviewAndSeatInfo() {
@@ -40,7 +42,7 @@ public class MovieShowService {
 		}
 	}
 	
-	public void searchMoviInfoByDate(String date) {
+	public void searchMovieInfoByDate(String date) {
 		int flag = 0;
 		Iterator<MovieShow> li = movieShow.iterator();
 		while(li.hasNext()) {
@@ -58,6 +60,7 @@ public class MovieShowService {
 		}
 		if(flag==0) {
 			System.out.println("No Show available on that date "+date);
+			System.out.println("Please enter valid date : \n 1. 7-Dec  \n 2. 8-Dec  \n 3. 9-Dec  \n 4. 10-Dec  \n 5. 11-Dec \n 6. 12-Dec");
 		}
 	}
 }

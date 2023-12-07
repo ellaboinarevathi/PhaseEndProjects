@@ -1,9 +1,6 @@
 package project;
-
 import java.util.Scanner;
-
 import project.service.MovieShowService;
-
 public class MovieTicketBooking {
 
 		public static void main(String[] args) {
@@ -16,7 +13,8 @@ public class MovieTicketBooking {
 	 		System.out.println("Enter the date : ");
 	 		String date=sc.next();
 	 			project.service.MovieShowService ms = new MovieShowService();	 			
-	 			ms.searchMoviInfoByDate(date);
+	 			ms.searchMovieInfoByDate(date);
+	 			Movie.Movieseat();
 	 			Movie.output();
 	 			
 		}
